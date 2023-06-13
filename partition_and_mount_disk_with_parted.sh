@@ -11,24 +11,24 @@ parted /dev/sdb
 # Get partition info (use throughout):
 print
 
-#	Create partition table:
+# Create partition table:
 mklabel gpt
 
-#	Create partition:
+# Create partition:
 mkpart primary ext4 0% 100%
 
-#	Quit parted session:
+# Quit parted session:
 quit
 
-#	List partitions again: Repeat step #1
+# List partitions again: Repeat step #1
 
-#	Confirm that kernel has an updated view of anything that has been changed (avoids a reboot):
+# Confirm that kernel has an updated view of anything that has been changed (avoids a reboot):
 partprobe
 
-#	Make filesystem from partition name:
+# Make filesystem from partition name:
 mkfs -t ext4 /dev/sdb1
 
-#	Get parition UUID (2 ways): 
+# Get parition UUID (2 ways): 
 blkid
 lsblk -f
 
