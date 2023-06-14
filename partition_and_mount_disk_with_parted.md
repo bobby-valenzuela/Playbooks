@@ -2,7 +2,7 @@ Run as root/sudo
 
 <br/>
 
-List Disks (3ways): 
+List Disks (2ways): 
 ```bash
 lsblk -e7
 ```
