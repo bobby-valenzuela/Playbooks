@@ -2,6 +2,10 @@ Run as root/sudo
 
 <br/>
 
+# Viewing Disks
+
+<br/>
+
 List Disks (2ways): 
 ```bash
 lsblk -e7
@@ -9,6 +13,10 @@ lsblk -e7
 ```bash
 df
 ```
+
+<br/>
+
+# Creating a partition
 
 <br/>
 
@@ -61,6 +69,9 @@ lsblk -f
 cat /proc/partitions
 ```
 
+<br/>
+
+# Creating Filesystem and Mounting
 
 <br/>
 
@@ -78,6 +89,17 @@ mkfs -t ext4 /dev/sdb1
 
 <br/>
 
+[Optional] Add filesystem label:
+```bash
+# EXT Filesystems
+e2label <partition> <new name>
+e2label /dev/sdb1 opt
+
+# XFS Filesystems
+xfs admin -L <new name> <partition>
+xfs admin -L opt /dev/sdb1
+```
+
 Get parition UUID (2 ways): 
 ```bash
 blkid
@@ -93,7 +115,32 @@ Add to fstab (can also use partition name):
 UUID=1234 /dev/sdb1 ext4 defaults 0 0
 ```
 
-Confirm mounted disks:
+Mount based on fstab:
+```bash
+mount -a
+```
+
+<br />
+
+# Verfying Changes
+
+<br/>
+
+Verifying mount status:
+```bash
+# Could also use /etc/mtab, but /proc/mounts is more up to date
+cat /proc/mounts
+```
+
+<br />
+
+Viewing Partition/Filestem info/mount info:
+```bash
+cat /proc/partitions
+```
 ```bash
 df -h
+```
+```bash
+lsblk -f
 ```
