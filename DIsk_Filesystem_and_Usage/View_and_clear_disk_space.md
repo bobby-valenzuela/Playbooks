@@ -35,7 +35,7 @@ journalctl --rotate
 ```bash
 journalctl --vacuum-size=100M
 
-# Clearing by date rang
+# Clearing by date range
 # journalctl --vacuum-time=2d
 ```
 

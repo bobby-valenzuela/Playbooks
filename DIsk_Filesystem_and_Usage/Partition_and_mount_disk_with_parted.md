@@ -122,7 +122,7 @@ mount -a
 
 <br />
 
-# Verfying Changes
+# Verifying Changes
 
 <br/>
 
