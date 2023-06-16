@@ -1,6 +1,9 @@
-
-[Branches](#branches)
-
+- [General and Logging](#general-and-logging)
+- [Branches](#branches)
+- [Branches: Undoing](#branches-undoing)
+- [Commits: Undoing](#commits-undoing)
+- [Commits](#commits)
+- [Stashing](#stashing)
 
 # General and Logging
 
@@ -351,7 +354,7 @@ git cherry-pick –no-commit <hash1> <hash2> <hash3> …
 
 <br />
 
-# Committing
+# Commits
 
 
 Stage file(s)
