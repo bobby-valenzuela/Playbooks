@@ -1,4 +1,8 @@
-#General and Logging
+
+[Branches](#branches)
+
+
+# General and Logging
 
 
 Fetch + Merge changesinto local
@@ -92,7 +96,7 @@ git log --pretty=medium  --after "Tue Jan 31 2023"
 
 
 
-# Branches 
+# Branches
 
 Create branch
 ```bash
