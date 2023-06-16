@@ -97,7 +97,28 @@ git log --pretty=medium  --after "Tue Jan 31 2023"
 
 <br />
 
+## Git blame
+Line Number based (from-to)
+```bash
+git blame script.pl  -L 31023,3105
+```
 
+<br />
+
+Regex Based
+```bash
+git blame <file>  -L ^/<regex>/    
+git blame script.pl  -L ^/function\\scoolFunction/    
+```
+
+<br />
+
+With single-quotes:
+```bash
+git blame script.pl  -L '/^function coolFunction/'   
+```
+
+<br />
 
 # Branches
 
@@ -543,4 +564,6 @@ Undelete a specific stash
 git fsck --no-reflog | grep dangling | cut -d " " -f 3
 ```
 ^ The above will return a hash and you can git stash apply that hash id
+
+<br />
 
