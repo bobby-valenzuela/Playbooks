@@ -11,6 +11,15 @@ Get usage of root dir (1 level deep):
 du -chd / 2>/dev/null | sort -rhk 1 | head -5
 ```
 
+<br />
+
+Viewing largest files in dir with ls:
+```bash
+ls -hal | awk '{ print $5,$9 }' | sort -rhk 1 | head | column -s ' ' -t
+```
+
+<br />
+
 Install/use ncdu:
 ```bash
 apt install ncdu -y
