@@ -13,10 +13,14 @@ du -chd / 2>/dev/null | sort -rhk 1 | head -5
 
 <br />
 
-Viewing largest files in dir with ls:
+Viewing largest files in dir with ls (2 ways):
+```bash
+ ls -halS | awk '{ print $5,$9}' | head
+ ```
 ```bash
 ls -hal | awk '{ print $5,$9 }' | sort -rhk 1 | head | column -s ' ' -t
 ```
+
 
 <br />
 
