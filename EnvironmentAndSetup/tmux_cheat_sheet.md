@@ -16,6 +16,7 @@ Navigate subwindows (panes): c
 Show pane numbers: `Ctrl+B+Q`  
 Move current pane left: `Ctrl+B+{`  
 Move current pane right: `Ctrl+B+}`  
+Zoom in/out to make pane full screen: `Ctrl+B+Z`
 
 ## Sessions
 Open tmux as a named session: `tmux new -s <name>`  
