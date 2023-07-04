@@ -1,5 +1,7 @@
 # TMUX Cheat Sheet  
 
+Enable TMUX plugins by install TPM: `https://github.com/tmux-plugins/tpm`  
+
 ## Windows
 Rename Window: `Ctrl+B+,`  
 Create new Window: `Ctrl+B+C`  
