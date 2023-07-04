@@ -1,6 +1,7 @@
 # TMUX Cheat Sheet  
 
-Enable TMUX plugins by install TPM: `https://github.com/tmux-plugins/tpm`  
+- Enable TMUX plugins by install TPM: `https://github.com/tmux-plugins/tpm`
+- Reload config file: `tmux source ~/.tmux.conf`
 
 ## Windows
 Rename Window: `Ctrl+B+,`  
@@ -24,3 +25,4 @@ Re-attach to session (from cli): `tmux attach -t 0`
 Rename tmux sessions (from cli): `tmux rename-sesssion -t 0 <name>`  
 Killing tmux sessions (from cli): `tmux kill-sesssion -t 0 <name>` 
 __Where ‘0’ is your session id/name__
+
