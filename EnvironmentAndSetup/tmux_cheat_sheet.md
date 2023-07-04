@@ -6,6 +6,7 @@
 ## Windows
 Rename Window: `Ctrl+B+,`  
 Create new Window: `Ctrl+B+C`  
+Show all Windows: `Ctrl+B+S`  
 Switch between windows: `Ctrl+B+<number>`  
 Close Window: `exit`
 
