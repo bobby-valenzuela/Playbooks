@@ -100,7 +100,7 @@
     timewarrior             # timewarrior tracking status (https://timewarrior.net/)
     taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     # cpu_arch              # CPU architecture
-    # time                    # current time - I'm commenting it out so it doesn'y display as my catppuccin theme (tmux plugin) should show it
+    # time                    # current time
     # ip                    # ip address and bandwidth usage for a specified network interface
     # public_ip             # public IP address
     # proxy                 # system-wide http/https/ftp proxy
@@ -124,7 +124,7 @@
   #   POWERLEVEL9K_STATUS_ICON_BEFORE_CONTENT=false
   #
   # Or for a specific segment in specific state:
-  #
+#
   #   POWERLEVEL9K_DIR_NOT_WRITABLE_ICON_BEFORE_CONTENT=false
   typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=
 
@@ -161,8 +161,52 @@
   # Default background color.
   typeset -g POWERLEVEL9K_BACKGROUND=236
 
+  ##### COMMON GLYPHS #####
+  VERT_ARROW='\uE0A0'
+  LN='\uE0A1'
+  LOCK_ICON='\uE0A2'
+  CN='\uE0A3'
+  FILLED_ARROW_RIGHT='\uE0B0'
+  OUTLINE_ARROW_RIGHT='\uE0B1'
+  FILLED_ARROW_LEFT='\uE0B2'
+  OUTLINE_ARROW_LEFT='\uE0B3'
+  FILLED_SEMICIRCLE_RIGHT='\uE0B4'
+  OUTLINE_SEMICIRCLE_RIGHT='\uE0B5'
+  FILLED_SEMICIRCLE_LEFT='\uE0B6'
+  OUTLINE_SEMICIRCLE_LEFT='\uE0B7'
+  CORNER_ARROW_BTM_LEFT='\uE0B8'
+  SLANT_TOP_LEFT_TO_BTM_RIGHT='\uE0B9'
+  CORNER_ARROW_BTM_RIGHT='\uE0BA'
+  SLANT_TOP_RIGHT_TO_BTM_LEFT='\uE0B4B'
+  CORNER_ARROW_TOP_LEFT='\uE0BC'
+  SLANT_TOP_RIGHT_TO_BOTTOM_LEFT2='\uE0BD'
+  CORNER_ARROW_TOP_RIGHT='\uE0BE'
+  SLANT_TOP_LEFT_TO_BTM_RIGHT2='\uE0BF'
+  SOLID_FLAMES_RIGHT='\uE0C0'
+  OUTLINE_FLAMES_RIGHT='\uE0C1'
+  SOLID_FLAMES_LEFT='\uE0C2'
+  OUTLINE_FLAMES_LEFT='\uE0C3'
+  CUBES_SM_RIGHT='\uE0C4'
+  CUBES_SM_LEFT='\uE0C5'
+  CUBES_LG_RIGHT='\uE0C6'
+  CUBES_LG_LEFT='\uE0C7'
+  PULSE_RIGHT='\uE0C8'
+  PULSE_LEFT='\uE0CA'
+  HEX_SOLID='\uE0CC'
+  HEX_OUTLINE='\uE0CD'
+  THREE_D_LEGO_RIGHT='\uE0CE'
+  THREE_D_LEGO_UP='\uE0CF'
+  LEGO_TOP='\uE0D0'
+  LEGO_SIDE='\uE0D1'
+  ANGLES_LEFT='\uE0D2'
+  ANGLES_RIGHT='\uE0D4'
+  ############################
+
+
   # Separator between same-color segments on the left.
-  typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%244F\uE0B1'
+  #typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%244F\uE0B1'
+  typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%244F\uE0B4'
+
   # Separator between same-color segments on the right.
   typeset -g POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='%244F\uE0B3'
   # Separator between different-color segments on the left.
@@ -178,7 +222,7 @@
   # The right end of right prompt.
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_LAST_SEGMENT_END_SYMBOL='▓▒░'
   # Left prompt terminator for lines without any segments.
-  typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=
+  typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL='\n'
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
@@ -1645,7 +1689,7 @@
   #   - verbose: Enable instant prompt and print a warning when detecting console output during
   #              zsh initialization. Choose this if you've never tried instant prompt, haven't
   #              seen the warning, or if you are unsure what this all means.
-  typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
 
   # Hot reload allows you to change POWERLEVEL9K options after Powerlevel10k has been initialized.
   # For example, you can type POWERLEVEL9K_BACKGROUND=red and see your prompt turn red. Hot reload
