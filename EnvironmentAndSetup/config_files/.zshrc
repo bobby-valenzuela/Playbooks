@@ -141,17 +141,17 @@ function test_echo(){
 
     if [[ ${1} =~ ssh ]]
     then
-        printf "no SSH!\n"
+	printf "no SSH!\n"
     fi
 
 }
 
 function restart_hive(){
 
-        ssh hive01 'sudo systemctl restart apache2 && echo "hive-01 restarted!"'
-        ssh hive02 'sudo systemctl restart apache2 && echo "hive-02 restarted!"'
-        ssh hive03 'sudo systemctl restart apache2 && echo "hive-03 restarted!"'
-
+	ssh hive01 'sudo systemctl restart apache2 && echo "hive-01 restarted!"'
+	ssh hive02 'sudo systemctl restart apache2 && echo "hive-02 restarted!"'
+	ssh hive03 'sudo systemctl restart apache2 && echo "hive-03 restarted!"'
+	
 }
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -165,5 +165,5 @@ if [ -f '/home/bobby_vz/sandbox/google-cloud-sdk/completion.zsh.inc' ]; then . '
 
 
 # MUST BE AT THE BOTTOM!!!
-# Command Line Synax Highlighting -
+# Command Line Synax Highlighting - 
 source /home/bobby_vz/zsh_utils/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
