@@ -194,7 +194,9 @@ git pull origin master
 ## Branches: Undoing
 
 <br />
-Reset local master to state of remote:
+
+Reset local branch to state of remote:  
+
 ```bash
 git reset --hard origin/master
 ```
