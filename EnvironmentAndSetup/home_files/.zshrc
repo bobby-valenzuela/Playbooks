@@ -112,8 +112,58 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-
 # === Custom Aliases ===
 
-# Enforce color scheme - helps tmux play nice with zsh
+# Enforce color scheme
 alias tmux="tmux -2"
+alias force_git_push="eval \$(ssh-agent -s) && ssh-add ~/.ssh/id_rsa && git push && echo 'Pushed to GitHub!'"
+#alias fgp="eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rs"
+
+
+export TERM=screen-256color
+
+# Git ones
+alias ssh-keyupdate="{ eval $(ssh-agent -s) ; } && ssh-add ~/.ssh/id_rsa"
+
+# funcs
+mp3_dl(){
+    youtube-dl -x --audio-format mp3 $1
+}
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+function test_echo(){
+
+    # printf "hi kids\n"
+
+    if [[ ${1} =~ ssh ]]
+    then
+        printf "no SSH!\n"
+    fi
+
+}
+
+function restart_hive(){
+
+        ssh hive01 'sudo systemctl restart apache2 && echo "hive-01 restarted!"'
+        ssh hive02 'sudo systemctl restart apache2 && echo "hive-02 restarted!"'
+        ssh hive03 'sudo systemctl restart apache2 && echo "hive-03 restarted!"'
+
+}
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/bobby_vz/sandbox/google-cloud-sdk/path.zsh.inc' ]; then . '/home/bobby_vz/sandbox/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/bobby_vz/sandbox/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bobby_vz/sandbox/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+
+
+
+# MUST BE AT THE BOTTOM!!!
+# Command Line Synax Highlighting -
+source /home/bobby_vz/zsh_utils/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
