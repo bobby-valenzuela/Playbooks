@@ -1,4 +1,3 @@
-
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
@@ -26,3 +25,8 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=1000
+
+" [WSL] copy (write) highlighted text to .vimbuffer with Ctrl+C
+vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+" [WSL] paste from buffer with Ctrl+V
+map <C-v> :r ~/.vimbuffer<CR>
