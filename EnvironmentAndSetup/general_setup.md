@@ -1,3 +1,7 @@
+# Preliminaries
+- Install Curl and Git
+
+<br />
 
 # ZSH
 - [Install ZSH with OhMyZsh](https://ohmyz.sh/)
