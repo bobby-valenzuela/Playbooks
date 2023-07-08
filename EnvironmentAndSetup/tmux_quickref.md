@@ -1,4 +1,4 @@
-# TMUX Cheat Sheet  
+# TMUX Quick Reference  
 
 - Enable TMUX plugins by install TPM: `https://github.com/tmux-plugins/tpm`
 - Reload config file: `tmux source ~/.tmux.conf`
