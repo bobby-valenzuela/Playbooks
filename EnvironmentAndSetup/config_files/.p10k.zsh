@@ -240,6 +240,10 @@
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=15
   typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=33
+  #typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=255
+  #typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=33
+  #typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=49
+  #typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=17
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐' #      
   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
@@ -273,9 +277,11 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=237
+  # typeset -g POWERLEVEL9K_DIR_BACKGROUND=237
   # Default current directory foreground color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
+  #typeset -g POWERLEVEL9K_DIR_FOREGROUND=15
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=84
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=23
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
@@ -850,8 +856,8 @@
 
   ##################################[ disk_usage: disk usage ]##################################
   # Colors for different levels of disk usage.
-  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND=007
-  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND=238
+  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND=49
+  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND=17
   typeset -g POWERLEVEL9K_DISK_USAGE_WARNING_FOREGROUND=0
   typeset -g POWERLEVEL9K_DISK_USAGE_WARNING_BACKGROUND=3
   typeset -g POWERLEVEL9K_DISK_USAGE_CRITICAL_FOREGROUND=7
