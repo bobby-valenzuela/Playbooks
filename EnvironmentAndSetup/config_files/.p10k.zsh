@@ -280,8 +280,8 @@
   # typeset -g POWERLEVEL9K_DIR_BACKGROUND=237
   # Default current directory foreground color.
   #typeset -g POWERLEVEL9K_DIR_FOREGROUND=15
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=84
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=23
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=15
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=241
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
