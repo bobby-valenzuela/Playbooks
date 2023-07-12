@@ -14,6 +14,14 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 <br />
 
+---
+
+### RegEx && Searching
+`\r`                - This represents newline  
+`%s/(foo)/\1\r`     - Replaces matches with itself followed by a newline   
+
+<br />
+
 ---  
 
 ### Numbers
