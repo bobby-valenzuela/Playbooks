@@ -4,7 +4,19 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 <br />
 
-# Numbers
+---  
+
+### Copy/Pasting
+`reg`    - View registers 
+`0p`     - Paste from 0 register   
+`C-r0`  - Paste from 0 register into vim command line. (Useful for pasting into a search regex)  
+`C-rw`  - Copy whatever word is under cursot and paste into vim command line. (Useful for pasting into a search regex)  
+
+<br />
+
+---  
+
+### Numbers
 `C-a`    - Increment Highlighted Numbers  
 `GC-a`   - Increment Highlight Numbers in sequence (each matched item will increment one more than previous match).  
 `C-x`    - Decrement Highlighted Numbers  
@@ -12,7 +24,9 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 <br />
 
-# Indenting
+---  
+
+### Indenting
 `=` - Auto-Indenting (based on rules - works on selected text as well)  
 `=ap` -  Auto-Indent Paragraph  
 `<` - Indent Left  
@@ -20,7 +34,9 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 <br />
 
-# Continguous Lines of text (paragraph)
+---  
+
+### Continguous Lines of text (paragraph)
 `yap` - Yank with newlines  
 `yip` - Yank without newlines  
 `cap` - Change with newlines  
@@ -30,17 +46,18 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 <br />
 
-# Finding begin/end of curly braces you're inside of...
-`vi{` - Selects everything within the block... then Esc to leave at ending "}
+---  
+
+### Brackets && Braces
+
+##### Before brackets
+`v%` - Select Content within parens/brackets (inclusively) if you're right before a bracket.  
 
 <br />
 
-# Before brackets
-`v%` - Select Content within parens/brackets (inclusively) if you're right before a bracket.
-
-<br />
-
-# Within Brackets
+##### Within Brackets
+Finding begin/end of curly braces you're inside of...  
+`vi{` - Selects everything within the block... then Esc to leave you at ending "}  
 `ci{` - Change text inside brackets (exclusively)  
 `ca{` - Change text inside brackets (inclusively)  
 `yi{` - Yank text inside brackets (inclusively)  
@@ -50,6 +67,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 <br />
 
-Note: `C-` should be taken to mean `Ctrl+`
+---  
+
+Note: `C-` should be taken to mean `Ctrl+`. All other keys are to be entered in succession (not simultaneously).
 
 
