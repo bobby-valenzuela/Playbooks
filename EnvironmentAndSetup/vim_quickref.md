@@ -13,7 +13,11 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 `C-rw`  - Copy whatever word is under cursot and paste into vim command line. (Useful for pasting into a search regex)  
 `"_dd`  - Delete line and yank to black hole register (keeps registers the same).  
 `ayy` - Yank line to "a" register (overwriting register a).  
-`Ayy` - Yank line to "a" register (appending to register a)
+`Ayy` - Yank line to "a" register (appending to register a)  
+
+<br />
+
+_Note: '^J' in a register will be changed to a newline when pasting._
 
 <br />
 
