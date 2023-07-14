@@ -6,6 +6,25 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 ---  
 
+### Moving
+`m {a-z}`	Setting markers/waypoints as {a-z}  
+`‘ {a-z}`	Move to marker/position {a-z}`  
+
+”	Move to previous position`  
+
+
+<br />
+
+
+---  
+
+### Editing
+`xp`    - swap two adjacent letters (move letter cursor one place to the right) 
+
+<br />
+
+---  
+
 ### Copy/Pasting
 `reg`    - View registers 
 `0p`     - Paste from 0 register   
