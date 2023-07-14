@@ -19,7 +19,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 ---  
 
 ### Editing
-`xp`    - swap two adjacent letters (move letter cursor one place to the right) 
+`xp`    - swap two adjacent letters (move letter cursor one place to the right)  
+`J`     - Merge lines: Apend line below to the end of the current line.
 
 <br />
 
