@@ -11,6 +11,7 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 `0p`     - Paste from 0 register   
 `C-r0`  - Paste from 0 register into vim command line. (Useful for pasting into a search regex)  
 `C-rw`  - Copy whatever word is under cursot and paste into vim command line. (Useful for pasting into a search regex)  
+`"_dd`  - Delete line and yank to black hole register (keeps registers the same).
 
 <br />
 
