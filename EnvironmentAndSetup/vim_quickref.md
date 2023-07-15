@@ -23,7 +23,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 `cc` - change entire line.  
 `~` - Change casing of selected text/character under cursor.  
 `g~w` - change case of word (until whitespace)  
-`g~~` - change case of entire line
+`g~~` - change case of entire line  
+`dt/<searchterm>` - Delete text up until search term
 
 <br />
 
