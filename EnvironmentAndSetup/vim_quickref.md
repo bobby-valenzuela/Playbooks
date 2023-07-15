@@ -30,6 +30,13 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 ---  
 
+### Selecting
+`o`    - Reverse order while continuing to select  
+
+<br />
+
+---
+
 ### Copy/Pasting
 `reg`    - View registers  
 `0p`     - Paste from 0 register   
@@ -79,7 +86,8 @@ _Note: '^J' in a register will be changed to a newline when pasting._
 `q<letter><commands>q` - record a macro  
 `@<letter>` - execute macro (once)  
 `<number>@<letter>` - To execute the macro <number> times  
-`:3,9 normal @b` - Run macro "b" on lines 3-9. 
+`:3,9 normal @b` - Run macro "b" on lines 3-9.  
+`reg <macro_letter>` - View register (holds macros as well - note '[^' represents the Esc key)  
 
 __Best Practices when recording macros__
 - Once recording has started, type `0` to begin at the beginning of the line.
