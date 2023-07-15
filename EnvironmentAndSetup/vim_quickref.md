@@ -74,6 +74,19 @@ _Note: '^J' in a register will be changed to a newline when pasting._
 
 ---  
 
+### Macros
+`q<letter><commands>q` - record a macro  
+`@<letter>` - execute macro (once)  
+`<number>@<letter>` - To execute the macro <number> times  
+
+__Best Practices when recording macros__
+- Before recording, type `0` to begin at the begin at the beginning the the line.
+- Once done with commands, type 'j' before you finish recording to ensure ending on the next line (in case this macro runs multiple times).
+
+<br />
+
+---
+
 ### Continguous Lines of text (paragraph)
 `yap` - Yank with newlines  
 `yip` - Yank without newlines  
