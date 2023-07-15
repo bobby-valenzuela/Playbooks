@@ -25,6 +25,19 @@ vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR
 " paste from buffer
 vmap <C-v> :r ~/.vimbuffer<CR> 
 
+
+
+" ============ vim-plug plugins =================
+
+" Auto-Install Vim-Plug and run :PlugInstall (if not installed)
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+"
+
+
 call plug#begin()
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
@@ -68,6 +81,12 @@ Plug 'vimcolorschemes/vimcolorschemes'
 
 
 call plug#end()
+
+
+
+
+
+
 
 " =============== COLOR SCHEMES ============== "
 " Defining custome color schemes needs to be here - after all plugins have loaded
