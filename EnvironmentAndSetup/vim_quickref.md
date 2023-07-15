@@ -78,7 +78,7 @@ _Note: '^J' in a register will be changed to a newline when pasting._
 `q<letter><commands>q` - record a macro  
 `@<letter>` - execute macro (once)  
 `<number>@<letter>` - To execute the macro <number> times  
-`:3,9normal @b` - Run macro "b" on lines 3-9. 
+`:3,9 normal @b` - Run macro "b" on lines 3-9. 
 
 __Best Practices when recording macros__
 - Once recording has started, type `0` to begin at the beginning of the line.
