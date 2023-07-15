@@ -8,9 +8,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 ### Moving
 `m {a-z}`	Setting markers/waypoints as {a-z}  
-`‘ {a-z}`	Move to marker/position {a-z}`  
-
-”	Move to previous position`  
+`‘ {a-z}`	Move to marker/position {a-z}  
+`''`	- Move to previous position  (thats two single quotes in succession, not a single double quote)
 
 
 <br />
@@ -23,6 +22,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 `J`     - Merge lines: Apend line below to the end of the current line.  
 `cc` - change entire line.  
 `~` - Change casing of selected text/character under cursor.  
+`g~w` - change case of word (until whitespace)  
+`g~~` - change case of entire line
 
 <br />
 
