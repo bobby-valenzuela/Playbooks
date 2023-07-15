@@ -32,10 +32,20 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 ### Selecting
 `o`    - Reverse order while continuing to select  
+`/<term>` - While in visual mode, select lines based on RegEx
 
 <br />
 
 ---
+
+### RegEx && Searching
+`\r`                - This represents newline  
+`%s/(foo)/\1\r`     - Replaces matches with itself followed by a newline   
+`s///g` - When text is selected you can use a replace (without the %) to replace text within the selected range  
+
+<br />
+
+---  
 
 ### Copy/Pasting
 `reg`    - View registers  
@@ -53,14 +63,6 @@ _Note: '^J' in a register will be changed to a newline when pasting._
 <br />
 
 ---
-
-### RegEx && Searching
-`\r`                - This represents newline  
-`%s/(foo)/\1\r`     - Replaces matches with itself followed by a newline   
-
-<br />
-
----  
 
 ### Numbers
 `C-a`    - Increment Highlighted Numbers  
