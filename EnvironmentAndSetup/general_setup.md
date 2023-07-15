@@ -24,6 +24,7 @@
 
 # VIM
 - [Install Vim-Plug plugin manager](https://github.com/junegunn/vim-plug)
+- - Actually, this is more of a backup as I've added the auto-install snippet for vim-plug into the .vimrc file
 - Replace ~/.vimrc with saved one (source with :so % or just close/re-open)
 - If you have ~/.vimrc.plug, replace that with saved ones
 - Load plugins by opening .vimrc or vimrc.plug file (whichever has plugins loadede) and running `:PlugInstall`
