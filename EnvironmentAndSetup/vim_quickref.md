@@ -20,14 +20,16 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 ### Editing
 `xp`    - swap two adjacent letters (move letter cursor one place to the right)  
-`J`     - Merge lines: Apend line below to the end of the current line.
+`J`     - Merge lines: Apend line below to the end of the current line.  
+`cc` - change entire line.  
+`~` - Change casing of selected text/character under cursor.  
 
 <br />
 
 ---  
 
 ### Copy/Pasting
-`reg`    - View registers 
+`reg`    - View registers  
 `0p`     - Paste from 0 register   
 `C-r0`  - Paste from 0 register into vim command line. (Useful for pasting into a search regex)  
 `C-rw`  - Copy whatever word is under cursot and paste into vim command line. (Useful for pasting into a search regex)  
