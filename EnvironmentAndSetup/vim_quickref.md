@@ -67,9 +67,9 @@ _Note: '^J' in a register will be changed to a newline when pasting._
 
 ### Numbers
 `C-a`    - Increment Highlighted Numbers  
-`GC-a`   - Increment Highlight Numbers in sequence (each matched item will increment one more than previous match).  
+`gC-a`   - Increment Highlight Numbers in sequence (each matched item will increment one more than previous match).  
 `C-x`    - Decrement Highlighted Numbers  
-`GC-x`   - Decrement Highlight Numbers in sequence (each matched item will increment one more than previous match).
+`gC-x`   - Decrement Highlight Numbers in sequence (each matched item will increment one more than previous match).
 
 <br />
 
