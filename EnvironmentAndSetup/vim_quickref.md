@@ -32,7 +32,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 
 ### Selecting
 `o`    - Reverse order while continuing to select  
-`/<term>` - While in visual mode, select lines based on RegEx
+`/<term>` - While in visual mode, select lines based on RegEx  
+`C-v` - enter visual block mode. Once text is selected enter insert mode (`a/A`,`i/I`,`c/C`,`p/P`,`o/O` etc) and make changes. They will appear on the first line, but once you hit Esc those changes will be made to all selected lines. 
 
 <br />
 
