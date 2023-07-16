@@ -7,7 +7,8 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 ---  
 
 ### Buffers
-`:edit ~/.vimrc` - edit a file by name.  
+`:E` - Open file nav (short for `explore`)  
+`:e ~/.vimrc` - edit a file by name (short for `:edit`).  
 `:ls` or `buffers`   - view buffers  
 `C-^` (which is `Ctrl+Shift+6`) - swap back and forth between current (`#`) and alternate (`a%`) buffers.  
 `:bn` - rotate to next buffer.  
