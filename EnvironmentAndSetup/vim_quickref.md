@@ -7,13 +7,19 @@ There are loads of good vim cheat sheets out there and this isn't a substitution
 ---  
 
 ### Buffers
-`xp`    - swap two adjacent letters (move letter cursor one place to the right)  
-`J`     - Merge lines: Apend line below to the end of the current line.  
-`cc` - change entire line.  
-`~` - Change casing of selected text/character under cursor.  
-`g~w` - change case of word (until whitespace)  
-`g~~` - change case of entire line  
-`dt/<searchterm>` - Delete text up until search term
+`:edit ~/.vimrc` - edit a file by name.  
+`:ls` or `buffers`   - view buffers  
+`C-^` (which is `Ctrl+Shift+6`) - swap back and forth between current (`#`) and alternate (`a%`) buffers.  
+`:bn` - rotate to next buffer.  
+`:bp` - rotate back to previous buffer.  
+`:bf` or `:bl` - go to first/last buffer (f/l)  
+`:b3`     - Select buffer #3.  
+`:b file1.txt`     - Select by filename.  
+`:b` then `<C-d>` - show all open buffers to cycle though.
+`:badd myfile.txt` - add a new buffer by filename  
+`:bd myfile.txt` - delete a buffer by buffer number or filename  
+`:%bd` - Delete all open buffers  
+`:wall` - Write to all open buffers  
 
 <br />
 
