@@ -8,6 +8,7 @@
   - Replace ~/.zshrc with one saved.
 - [Install Powerline10k Theme](https://github.com/romkatv/powerlevel10k)
   - Be sure to install the fonts mentioned and select those fonts for your terminal.
+  - For WSL I install "MesloLGS NF" and "DroidSansM Nerd Font" and set the "DroidSansM" in terminal.
   - Replace ~/.p10k.zshrc with one saved and source.
   - [Font glyphs from Nerdfont](https://www.nerdfonts.com/cheat-sheet)
 - [Install ZSH syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
