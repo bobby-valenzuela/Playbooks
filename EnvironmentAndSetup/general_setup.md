@@ -19,7 +19,9 @@
 # TMUX
 - [Install tmux: Terminal MultiPlexer](https://github.com/tmux/tmux/wiki/Installing)
 - [Install tmux plugin manager](https://github.com/tmux-plugins/tpm)
+  - One cmd: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm` 
 - [Install Catppuccin Theme](https://github.com/catppuccin/tmux)
+  - Already installed is tpm is installed. 
 - Install all plugins loaded with `<prefix>+I` in a tmux session.
 - Replace ~/.tmux.conf with saved one and source with `tmux source-file ~/.tmux.conf`
 
