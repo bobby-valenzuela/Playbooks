@@ -166,7 +166,7 @@ if [ -f '/home/bobby_vz/sandbox/google-cloud-sdk/completion.zsh.inc' ]; then . '
 
 # MUST BE AT THE BOTTOM!!!
 # Command Line Synax Highlighting - 
-source /home/bobby_vz/zsh_utils/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/zsh_utils/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias cc='quickconnect'
 
 export PATH="$HOME/.local/bin":$PATH
